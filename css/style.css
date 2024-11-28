@@ -1,0 +1,613 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background-color: black;
+}
+
+/* Título principal */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #9c2341;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 24px;
+    color:white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Estilo da Seção de Início */
+#inicio {
+    color: #fff;
+    text-align: center;
+    background-color: black;
+    padding: 60px 20px; /* Adiciona espaçamento superior e inferior */
+    margin-top: 120px; /* Adiciona uma margem no topo para afastar do menu */
+    
+}
+
+
+#profissao{
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Estilo da Seção de Sobre mim */
+#about-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Informações pessoais */
+#profile-info {
+    margin-bottom: 30px;
+}
+
+#profile-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#profile-info p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Estilo da Foto de Perfil */
+#profile-picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6347; /* Cor de borda da imagem */
+}
+
+/* Botão de ação */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ff4500;
+}
+
+/* Estilo do Menu */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 15%;
+}
+
+.navbar .toggle-btn {
+    background: none;
+    border: 2px solid #ff69b4; /* Cor da borda (rosa) */
+    color: #ff69b4; /* Cor do ícone */
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 10px; /* Espaço entre o ícone e o nome */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quando o botão está aberto (exibindo o "X") */
+.navbar .toggle-btn.open {
+    font-size: 2rem;
+}
+
+/* Substitui o conteúdo do botão: ☰ para X */
+.navbar .toggle-btn::before {
+    content: "\2630"; /* Símbolo ☰ por padrão */
+    font-size: 1.5rem;
+}
+
+/* Mostra o "X" quando a classe 'open' for ativada */
+.navbar .toggle-btn.open::before {
+    content: "\00d7"; /* Símbolo "X" */
+    font-size: 2rem;
+}
+
+
+/* Menu */
+.navbar .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: none;
+    border-style: transparent;
+
+}
+
+.navbar .menu.active {
+    display: block; /* Torna o menu visível */
+}
+
+.navbar .menu li {
+    margin: 10px 0;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: #236c9c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu li a:hover {
+    background-color: #9c2341;
+}
+
+.navbar .menu li.active a {
+    background-color: #9c2341;
+    color: white;
+}
+
+/* Efeito de borda e cor ao passar o mouse */
+.button:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Texto sobre mim - inicialmente escondido */
+.hidden {
+    display: none;
+}
+
+/* Estilização da seção "Sobre" */
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Estilização do texto e imagem */
+#about-text {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+#about-text h1 , #experiencia h1 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: black;
+}
+#about-text h2 ,#portfolio h2 {
+    text-transform: uppercase;
+    color: #a9173b;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilização da imagem */
+#about-text img {
+    /*foto no centro da página*/
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#about-text img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Estilização do parágrafo */
+#about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: black;
+    margin-top: 4.2rem;
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+
+/* Estilização do botão */
+#about-text button {
+    padding: 10px 20px;
+    margin:20px auto ;
+    display: flex;
+    background-color: #e63946;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+#about-text button:hover {
+    background-color: #c5283d;
+    transform: translateY(-3px);
+}
+
+#about-text button:active {
+    background-color: #a11e32;
+    transform: translateY(1px);
+}
+
+#experiencia h2, #formacao h2, #cursos h2, #certificacoes h2, #portfolio h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: brown;
+}
+#timeline-content p {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#experiencia, #formacao, #cursos , #certificacoes {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #c4d2ec;
+    text-align: center;
+}
+
+/* Estilos da Timeline */
+.timeline {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 2px solid #ddd;
+}
+.timeline h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+.timeline-ico {
+    height: 4.8rem;
+    width: 4.8rem;
+    line-height: 4.8rem;
+    background: #313131;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 35%;
+    top: .9rem;
+    margin-left: -2.4rem;
+}
+.timeline-header {
+    float: left;
+    width: 35%;
+    padding-right: 90px;
+    text-align: right;
+}
+.timeline-content {
+    margin-left: 30px;
+}
+
+/* Paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #0056b3;
+    align-items: center;
+}
+
+.content {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+#portfolio {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color:#f9f9f9;
+    text-align: center;
+}
+
+
+
+/* Estilo da seta */
+.button::after {
+    content: " ▼";
+    font-size: 18px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+/* Alteração da seta ao abrir o texto */
+#about-text.visible + .button::after {
+    content: " ▲"; /* Seta para cima */
+}
+
+/* Seção de Portfólio */
+.project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Ajustando o alinhamento dos cards */
+    padding: 20px 0;
+}
+
+.project-card {
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fixa na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: 1000;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 70%;
+    max-width: 600px; /* Tamanho máximo maior */
+    max-height: 80vh; /* Limita a altura do modal */
+    overflow-y: auto; /* Permite rolagem se necessário */
+    border-radius: 10px;
+    text-align: center;
+    position: relative; /* Para garantir que o botão de fechar fique no topo */
+    margin: 10vh auto; /* Centraliza o modal verticalmente */
+}
+
+/* Ajustando a imagem no modal */
+#modal-image {
+    width: 15%;
+    height: auto;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.modal-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Botões dentro do Modal */
+.modal-content button {
+    margin-top: 10px; /* Distância entre os botões */
+    padding: 10px 20px; /* Tamanho dos botões */
+    border: none;
+    background-color: #ff4500; /* Cor de fundo */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-content button:hover {
+    background-color: #ff4500;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Estilos de Responsividade (Menu Hamburger para dispositivos móveis) */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+    }
+
+    .navbar .menu.active {
+        display: block;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .navbar .menu li {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* Media Query para telas pequenas (como celulares) */
+@media (max-width: 768px) {
+    #inicio {
+        font-size: 14px; /* Ajusta o tamanho da fonte em telas menores */
+        padding: 30px 0; /* Ajusta o espaçamento para telas menores */
+    }
+
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        max-width: 90%;
+        margin: 15vh auto;
+    }
+}
+
+/* Estilo de conteúdo principal */
+.content {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 0.5rem;
+    text-align: center;
+    z-index: 0;  /* Garante que o rodapé fique abaixo do modal */
+}
+.social-links-rodape {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.social-links-rodape li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: 0.8rem;
+}
+
+.social-links-rodape li a:hover {
+    color: #ff6347;
+
+}
+
+/* social links - sobre */
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    justify-items: center;
+}
+
+.social-links li a:hover {
+    color: #ff6347;
+}

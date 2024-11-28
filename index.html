@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Larissa Thalia, desenvolvedora front-end. Explore projetos, resumos e mais.">
+    <title>Larissa Thalia | Desenvolvedora Front-end</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <div class="container">
+        <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <button class="toggle-btn" onclick="toggleMenu()"></button>
+        <ul class="menu">
+            <li><a href="#inicio" onclick="toggleMenu()">Início</a></li>
+            <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+            <li><a href="#formacao" onclick="toggleMenu()">Formação</a></li>
+            <li><a href="#experiencia" onclick="toggleMenu()">Experiência</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Projetos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div id="inicio">
+        <h1>Olá, seja bem-vindo!</h1>
+        <h2>Eu sou <br>Larissa Thalia</h2>
+        <p id ="profissao">Desenvolvedora Front-end | Cientista de Dados | Analista de Suporte</p>
+        <div class="footer-right">
+            <ul class="social-links">
+                <li><a href="mailto:ltsilva.ti@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="gmail">
+                    <i class="fas fa-envelope"></i>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/larissa-silva-93452911b/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn">
+                    <i class="fab fa-linkedin"></i> 
+                </a></li>
+                <li><a href="http://github.com/ltsilva23" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub">
+                    <i class="fab fa-github"></i>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="sobre">
+        <div id="about-text">
+            <h2>Sobre</h2>
+            <h1>Quem sou </h1>
+                <img src="img/eu_01.jpeg" alt="Profile-Picture">
+                <p class="lead" align="justify">
+                    Estou em um momento de transição de carreira para a área de desenvolvimento, 
+                    impulsionada pela paixão por tecnologia e pela vontade de acompanhar as inovações que transformam o mundo. <br><br>
+                    Meu foco é evoluir constantemente, buscando aprender novas habilidades e aplicar conhecimentos em projetos desafiadores.
+                    Com uma abordagem proativa, estou sempre atenta às tendências emergentes e pronta para colaborar em soluções criativas 
+                    que impactem positivamente os negócios e a sociedade. Acredito no poder da tecnologia para transformar ideias em resultados
+                    concretos e estou comprometida em ser parte dessa evolução.
+                </p>
+
+                <button onclick="viewcv()">Baixe meu CV</button>
+        </div>
+    </section>
+
+    <!-- Seção Experiência Profissional,Formação Academica e cursos -->
+    <section id="experiencia">
+        <div class="container">
+            <!-- Experiência 1 -->
+            <h2>Experiência Profissional</h2>
+            <div class="timeline" data-page="1">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3 align="left">DXC Technology</h3>
+                        <p id="date">Abril, 2021 - Atual</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Analista de suporte N1</h4>
+                        <hr/>
+                        <p>
+                        Suporte remoto através do atendimento via chat, atendimentos técnicos por acesso remoto,
+                        instalação, configuração e manutenção de software.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+            <!-- Experiência 2 -->
+            <div class="timeline" data-page="2">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>UNIFTC</h3>
+                        <p>Setembro de 2018 - Abril de 2021</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Técnico em Suporte Jr</h4>
+                        <hr/>
+                        <p>
+                            Atendimento aos clientes internos e externos(presencial e remoto) utilizando 
+                            ferramentas de helpdesk.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+            <!-- Experiência 3 -->
+            <div class="timeline" data-page="3">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>UNIFTC</h3>
+                        <p>Janeiro de 2018 - Setembro de 2018 </p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Técnico em Informática</h4>
+                        <hr/>
+                        <p>
+                            Reparo e manutenção de computadores, instalações impressoras multifuncionais, 
+                            atendimentos aos clientes internos e externos (presencial e remoto) utilizando ferramenta de helpdesk, 
+                            instalação de equipamentos para videoconferência, instalação de ramal.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+            <!-- Experiência 4 -->
+            <div class="timeline" data-page="4">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>UNIFTC</h3>
+                        <p>Agosto de 2016 - Dezembro de 2017 </p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Jovem Aprendiz</h4>
+                        <hr/>
+                        <p>
+                            Reparo e manutenção de computadores, instalações impressoras multifuncionais,
+                            atendimentos aos clientes internos e externos (presencial e remoto) utilizando ferramenta de helpdesk,
+                            instalação de equipamentos para videoconferência, elaboração de planilhas, arquivamento de documentos, 
+                            cadastramento de Mac de dispositivos administrativos e acadêmicos no DHCP através de PfSense.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+            <div class="pagination" id="pagination-experiencia">
+                <div class="dot" data-page="1"></div>
+                <div class="dot" data-page="2"></div>
+                <div class="dot" data-page="3"></div>
+                <div class="dot" data-page="4"></div>
+            </div>
+        </div>
+                
+    </section>
+
+    <!-- Formação Academica -->
+    <section id="formacao">
+            <div class="container">
+                <h2>Formação Acadêmica</h2>
+                
+                <div class="timeline" data-page="5">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <h3>Estácio</h3>
+                            <p>Julho, 2024 </p>
+                        </div>
+                        <div class="timeline-icon">
+                            <i class="icon"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Pós-Graduação</h4>
+                            <h3>Engenharia de Software</h3>
+                            <p>
+                                Proporcionou uma formação prática e teórica em desenvolvimento, gestão e manutenção de sistemas. 
+                                O curso abordou metodologias ágeis, arquitetura de software, testes e gerenciamento de projetos, 
+                                capacitando para a aplicação de boas práticas e a solução de problemas complexos em ambientes tecnológicos dinâmicos.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                
+                <div class="timeline" data-page="6">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <h3>Universidade Católica do Salvador(UCSAL)</h3>
+                            <p>Dezembro, 2022 </p>
+                            </div>
+                            <div class="timeline-icon">
+                                <i class="icon"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Graduação</h4>
+                                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                                <p>
+                                    Forneceu uma base sólida em programação, análise de sistemas e desenvolvimento de software. 
+                                    O curso abrangeu linguagens de programação, banco de dados, engenharia de software, infraestrutura de TI
+                                    e metodologias de desenvolvimento, capacitando para criar soluções tecnológicas eficientes e inovadoras.
+                                    A formação também incluiu o desenvolvimento de habilidades analíticas e a aplicação de boas práticas 
+                                    para atender às necessidades do mercado de tecnologia.
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+    
+                <!-- Paginação da Formação -->
+                <div class="pagination" id="pagination-formacao">
+                    <div class="dot" data-page="5"></div>
+                    <div class="dot" data-page="6"></div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos">
+        <div class="container">
+            <h2>Cursos</h2>
+            <!-- Curso 1 -->
+            <div class="timeline" data-page="7">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>Udemy</h3>
+                        <p>Em andamento </p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Curso de Python + RPA + Criação de Projetos Reais</h4>
+                        </div>
+                    </div>
+            </div>
+            <!-- Curso 2 -->
+            <div class="timeline" data-page="8">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>DIO</h3>
+                        <p>Julho, 2024 </p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Python AI Backend Developer</h4>
+                        </div>
+                    </div>
+            </div>
+            <!-- Curso 3 -->
+            <div class="timeline" data-page="9">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>Gama Academy</h3>
+                        <p>Julho de 2021 - Agosto de 2021</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Desenvolvimento Full Stack</h4>
+                        </div>
+                    </div>
+                    </div>
+            <!-- Curso 4 -->
+            <div class="timeline" data-page="10">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>Udemy</h3>
+                        <p>Dezembro, 2020 </p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Banco de Dados SQL e NoSQL do básico ao avançado</h4>
+                        </div>
+                    </div>
+            </div>
+            <!-- Paginação da Formação -->
+            <div class="pagination" id="pagination-cursos">
+                <div class="dot" data-page="7"></div>
+                <div class="dot" data-page="8"></div>
+                <div class="dot" data-page="9"></div>
+                <div class="dot" data-page="10"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Seção Certificações-->
+    <section id="certificacoes">
+        <div class="container">
+            <h2>Certificações</h2>
+            <!-- Certificação 1 -->
+            <div class="timeline" data-page="11">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>Ka Solution</h3>
+                        <p>Fevereiro, 2024 </p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Microsoft Certified: Azure Fundamentals</h4>
+                        </div>
+                    </div>
+            </div>
+            <!-- Certificação 2 -->
+            <div class="timeline" data-page="12">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>CertiProf</h3>
+                        <p>Fevereiro, 2025 </p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Certificação Profissional de Trabalho Remoto - RWPC</h4>
+                        </div>
+                    </div>
+            </div>
+            <!-- Certificação 3 -->
+            <div class="timeline" data-page="13">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <h3>DBAOCM</h3>
+                        <p>Setembro, 2021</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="icon"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Masterclass Oracle Database</h4>
+                        </div>
+                    </div>
+            </div>
+            <!-- Paginação da Formação -->
+            <div class="pagination" id="pagination-certificacoes">
+                <div class="dot" data-page="11"></div>
+                <div class="dot" data-page="12"></div>
+                <div class="dot" data-page="13"></div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Seção Portfólio -->
+<section id="portfolio">
+    <div class="container">
+        <h2>Projetos</h2>
+        <div class="project-container">
+            <!-- Card do Projeto 1 -->
+            <button class="project-card" aria-label="Análise de Vendas de Cursos Online" onclick="openModal('Análise de Vendas de Cursos Online', 'img/01.jpeg',
+            'Este projeto realiza uma análise exploratória dos dados de vendas de cursos online para extrair insights sobre seu desempenho. ' +
+            'Utilizando Python e bibliotecas como Pandas, Matplotlib, Streamlit e Plotly, foram criadas visualizações interativas para facilita ' +
+            'a interpretação dos dados. A interface, desenvolvida com Streamlit, proporciona uma experiência intuitiva e interativa ao usuário.')">
+                <img src="img/01.jpeg" alt="Análise de Vendas de Cursos Online com Python">
+                <h3 class="project-title">Análise de Vendas de Cursos Online</h3>
+            </button>
+
+            <!-- Card do Projeto 2 -->
+            <button class="project-card" aria-label="Minha Primeira API - Projeto Back-End" onclick="openModal('Minha Primeira API - Projeto Back-End', 'img/API.jpg',
+            'O projeto consiste em uma API desenvolvida com as tecnologias Node.js e MongoDB. Ela é voltada para armazenar e gerenciar informações' +
+            'de perfis de pessoas com dados como nome, imagem, citação inspiradora e minibio. A API serve para armazenar e acessar essas informações' + 
+            ' de forma rápida e eficiente, oferecendo um banco de dados organizado com MongoDB e a construção de uma estrutura de backend robusta com Node.js.')">
+                <img src="img/API.jpg" alt="Minha Primeira API - Projeto Back-End">
+                <h3 class="project-title">Minha Primeira API - Projeto Back-End</h3>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Projeto -->
+<div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+        <button class="close" aria-label="Fechar Modal" onclick="closeModal()">&times;</button>
+        <div id="modal-body">
+            <h1 id="modal-title">Título do Projeto</h1>
+            <img id="modal-image" src="" alt="Imagem do Projeto">
+            <p id="modal-description">Descrição do projeto...</p>
+            <button id="viewProjectButton" onclick="viewProject()">Ver Projeto</button>
+            <button onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 Larissa Thalia. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-right">
+                <ul class="social-links-rodape">
+                    <li><a href="https://www.linkedin.com/in/larissa-silva-93452911b/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a></li>
+                    <li><a href="http://github.com/ltsilva23" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/menu.js"></script>
+    <script src="js/projeto.js"></script>
+    <script src="js/cv.js"></script>
+    <script src="js/paginacao.js"></script>
+</body>
+</html>
