@@ -9,7 +9,7 @@ Este repositório contém o código fonte do meu portfólio pessoal. O objetivo 
 ## 🌐 Visualização
 
 Você pode visualizar a versão ao vivo do meu portfólio acessando o seguinte link:  
-[Link para o portfólio ao vivo](https://ltsilva-me.netlify.app/)
+[Portfolio_Larissa](https://ltsilva-me.netlify.app/)
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -20,7 +20,7 @@ Você pode visualizar a versão ao vivo do meu portfólio acessando o seguinte l
 ## ⚙️ Como Rodar
 
 1. **Clone o repositório**:
-git clone https://github.com/ltsilva23/Meu_Portfolio.git
+git clone https://github.com/ltsilva23/Desafio-Portfolio-PretaLab.git
 
 
 2. **Abra o arquivo HTML**:
