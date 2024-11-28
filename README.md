@@ -33,7 +33,7 @@ git clone https://github.com/ltsilva23/Desafio-Portfolio-PretaLab.git
 
 - Design responsivo (funciona bem em dispositivos móveis e desktop).
 - Animações simples com JavaScript para uma experiência de usuário mais interativa.
-- Seções sobre mim, habilidades, projetos e contato.
+- Seções sobre mim, Formação, Experiências e Projetos.
 
 ## 🔗 Links
 
