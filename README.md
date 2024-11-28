@@ -20,7 +20,7 @@ Você pode visualizar a versão ao vivo do meu portfólio acessando o seguinte l
 ## ⚙️ Como Rodar
 
 1. **Clone o repositório**:
-git clone https://github.com/ltsilva23/Desafio-Portfolio-PretaLab.git
+git clone https://github.com/ltsilva23/PretaLab-c12-HTML-CSS.git
 
 
 2. **Abra o arquivo HTML**:
