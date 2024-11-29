@@ -211,14 +211,14 @@ h2 {
     
 }
 
-#about-text h1 , #experiencia h1 {
+#about-text h1 , #experiencia h1, #formacao h1, #cursos h1, #certificacoes h1, #portfolio h1 {
     font-size: 1rem;
     margin-bottom: 20px;
     color: black;
 }
-#about-text h2 ,#portfolio h2 {
+#about-text h2 ,#experiencia h2, #formacao h2, #cursos h2, #certificacoes h2, #portfolio h2 {
     text-transform: uppercase;
-    color: #a9173b;
+    color: brown;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -276,12 +276,6 @@ h2 {
 #about-text button:active {
     background-color: #a11e32;
     transform: translateY(1px);
-}
-
-#experiencia h2, #formacao h2, #cursos h2, #certificacoes h2, #portfolio h2 {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: brown;
 }
 #timeline-content p {
     font-size: 14px;
@@ -544,7 +538,7 @@ h2 {
 /* Media Query para telas pequenas (como celulares) */
 @media (max-width: 768px) {
     #inicio {
-        font-size: 14px; /* Ajusta o tamanho da fonte em telas menores */
+        font-size: 2rem; /* Ajusta o tamanho da fonte em telas menores */
         padding: 30px 0; /* Ajusta o espaçamento para telas menores */
     }
 
