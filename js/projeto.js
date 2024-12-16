@@ -26,6 +26,14 @@ function openModal(title, imageUrl, description) {
         viewButton.onclick = function() { 
             window.location.href = "https://back-end-mz31.onrender.com/mulheres"; 
         };
+    
+    } else if (title === 'Todo-List') {
+        // Limpar descrição anterior e adicionar o novo conteúdo
+        document.getElementById("modal-description").innerHTML += '<p>Confira o código no GitHub <a href="https://github.com/ltsilva23/Todo-List.git" target="_blank" rel="noopener noreferrer">aqui</a></p>';
+        
+        viewButton.onclick = function() { 
+            window.location.href = "https://focus-list1.netlify.app/";
+        };
     }
 }
 
